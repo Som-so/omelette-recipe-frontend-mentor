@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(assets/fonts/Outfit-Regular.woff2) format(woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(assets/fonts/Outfit-SemiBold.woff2) format(woff2);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(assets/fonts/Outfit-Bold.woff2) format(woff2);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Young-serif';
+    src: url(assets/fonts/YoungSerif-Regular.woff2) format(woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    --font-size: 1rem;
+    --font-family: 'Outfit';
+    --heading-font-family: 'Young-serif', serif
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    line-height: 1.5;
+    color: var(--stone-900);
+}
+
+.main-body {
+    width: 100%;
+    min-height: 100dvh;
+    background-color: var(--rose-50);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.omelette-recipe-block {
+    margin: 4.5rem;
+    width: 40rem;
+    padding: min(4%, 2rem);
+    border: 0px solid var(--stone-900);
+    border-radius: 1rem;
+    background-color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    --margin: 5rem;
+    --max-width: 40rem;
+    width: min(100% - var(--margin), var(--max-width))
+}
+
+
+h1 {
+    font-family: var(--heading-font-family);
+    margin-block-end: 0.5rem;
+    font-weight: 400;
+}
+
+h2 {
+    color: var(--brown-800);
+    font-family: var(--heading-font-family);
+    font-weight: 400;
+    margin-block-end: 0.5rem;
+}
+
+img {
+    border-radius: 1rem;
+    margin-block-end: 1.5rem;
+}
+
+.omelette-recipe-description {
+    margin-block-end: 1.5rem;
+}
+
+.prep-time {
+    background-color: var(--rose-50);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-block-end: 1.5rem;
+}
+
+.prep-time h3 {
+    color: var(--rose-800);
+}
+
+.omelette-recipe-ingredients {
+    margin-block-end: 1.5rem;
+}
+
+.omelette-recipe-instructions {
+    margin-block-end: 2rem;
+}
+
+ul, ol {
+    list-style-position: inside;
+    margin: 0;
+    padding-left: 0;
+}
+
+li span{
+    padding-inline-start: 0.5rem;
+}
+
+ul li {
+    padding-top: 0.5rem;
+}
+
+ol li {
+    padding-top: 0.5rem;
+}
+
+ul li::marker {
+    color: var(--brown-800);
+    font-size: 0.7rem;
+}
+
+ol li::marker {
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+.prep-head {
+    font-weight:bold;
+}
+
+hr {
+    color: var(--stone-900);
+}
+
+.inst {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+}
+
+table.horizontal-line, td.horizontal-item {
+    border-block-start: 1px solid var(--stone-900);
+    margin-block-end: 1rem;
+    border-bottom: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-block-end: 1px solid var(--stone-900);
+}
+
+table, tr.no-bot td {
+    border: none;
+}
+
+.num {
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+table td.bottom-item {
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
